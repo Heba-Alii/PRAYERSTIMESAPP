@@ -1,5 +1,12 @@
 <resources>
-    <string name="app_name">PRAYERS TIMES APP</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">Prayer App</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="show_qibla_direction_on_map">Show Qibla Direction On Map</string>
+    <string name="isha">Isha</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="asr">Asr</string>
+    <string name="duhr">Duhr</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="fajr">Fajr</string>
+    <string name="next_prayer">Next Prayer</string>
 </resources>
