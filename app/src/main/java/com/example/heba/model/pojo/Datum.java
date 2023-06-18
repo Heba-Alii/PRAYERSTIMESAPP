@@ -4,12 +4,15 @@ import java.io.Serializable;
 
 public class Datum implements Serializable {
     public Timings timings;
-    public Date date;
+    public DateResponse date;
     public Meta meta;
 
-    public Datum(Timings timings, Date date, Meta meta) {
+    public Datum() {
+    }
+
+    public Datum(Timings timings, DateResponse dateResponse, Meta meta) {
         this.timings = timings;
-        this.date = date;
+        this.date = dateResponse;
         this.meta = meta;
     }
 
@@ -21,12 +24,12 @@ public class Datum implements Serializable {
         this.timings = timings;
     }
 
-    public Date getDate() {
+    public DateResponse getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDate(DateResponse dateResponse) {
+        this.date = dateResponse;
     }
 
     public Meta getMeta() {

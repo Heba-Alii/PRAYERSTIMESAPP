@@ -2,13 +2,13 @@ package com.example.heba.model.pojo;
 
 import java.io.Serializable;
 
-public class Date implements Serializable {
+public class DateResponse implements Serializable {
     private String readable;
     private String timestamp;
     private Gregorian gregorian;
     private Hijri hijri;
 
-    public Date(String readable, String timestamp, Gregorian gregorian, Hijri hijri) {
+    public DateResponse(String readable, String timestamp, Gregorian gregorian, Hijri hijri) {
         this.readable = readable;
         this.timestamp = timestamp;
         this.gregorian = gregorian;

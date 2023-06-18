@@ -6,7 +6,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class AppRetrofit {
-    private static final String BASE_URL = "http://api.aladhan.com/v1/";
+    private static final String BASE_URL = "https://api.aladhan.com/v1/";
     private ApiInterface apiInterface;
     public static AppRetrofit instance;
 

@@ -3,12 +3,12 @@ package com.example.heba.model.pojo;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Root implements Serializable {
+public class DateRoot implements Serializable {
     public int code;
     public String status;
     public ArrayList<Datum> data;
 
-    public Root(int code, String status, ArrayList<Datum> data) {
+    public DateRoot(int code, String status, ArrayList<Datum> data) {
         this.code = code;
         this.status = status;
         this.data = data;
