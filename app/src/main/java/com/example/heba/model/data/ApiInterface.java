@@ -8,5 +8,5 @@ import retrofit2.http.Query;
 
 public interface ApiInterface {
     @GET("calendar/2023/6")
-    Call<DateRoot> getGregorian(@Query("latitude") int latitude, @Query("longitude%20") int longitude, @Query("longitude") int longitude2, @Query("longitude") int method);
+    Call<DateRoot> getGregorian(@Query("latitude") int latitude, @Query("longitude%20") int longitude, @Query("longitude") int longitude2, @Query("method") int method);
 }

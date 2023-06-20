@@ -3,27 +3,26 @@ package com.example.heba.model.pojo;
 import java.io.Serializable;
 
 public class Timings implements Serializable {
-    // @JsonProperty("Fajr")
     public String Fajr;
-    //@JsonProperty("Sunrise")
+
     public String Sunrise;
-    //@JsonProperty("Dhuhr")
+
     public String Dhuhr;
-    // @JsonProperty("Asr")
+
     public String Asr;
-    //  @JsonProperty("Sunset")
+
     public String Sunset;
-    // @JsonProperty("Maghrib")
+
     public String Maghrib;
-    //  @JsonProperty("Isha")
+
     public String Isha;
-    //  @JsonProperty("Imsak")
+
     public String Imsak;
-    //  @JsonProperty("Midnight")
+
     public String Midnight;
-    //  @JsonProperty("Firstthird")
+
     public String Firstthird;
-    //    @JsonProperty("Lastthird")
+
     public String Lastthird;
 
     public Timings(String fajr, String sunrise, String dhuhr, String asr, String sunset, String maghrib, String isha, String imsak, String midnight, String firstthird, String lastthird) {

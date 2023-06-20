@@ -17,21 +17,19 @@ public class AppController {
         this.prayerTimeCallBack = prayerTimeCallBack;
     }
 
-    public void getPrayerTime() {
-        Call<DateRoot> call = AppRetrofit.getInstance().getApiInterface().getGregorian((int) 51.508515, (int) -0.1254872, (int) -0.1254872, 2);
+    public void getPrayerTime(int lat, int longitude) {
+        Call<DateRoot> call = AppRetrofit.getInstance().getApiInterface().getGregorian(lat, longitude, longitude, 2);
         call.enqueue(new Callback<DateRoot>() {
             @Override
             public void onResponse(Call<DateRoot> call, Response<DateRoot> response) {
                 if (response.isSuccessful()) {
-                    Log.e("TAG", "onResponse: "+response.body().getData());
                     prayerTimeCallBack.getTime(response.body());
                 }
             }
 
             @Override
             public void onFailure(Call<DateRoot> call, Throwable t) {
-                Log.e("TAG", "onFailure: "+t.getMessage() );
-
+                Log.e("TAG", "onFailure: " + t.getMessage());
             }
         });
     }

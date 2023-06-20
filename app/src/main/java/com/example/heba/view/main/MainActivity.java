@@ -7,6 +7,7 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.location.Geocoder;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -14,6 +15,8 @@ import android.view.ViewGroup;
 
 import com.example.heba.R;
 import com.example.heba.databinding.ActivityMainBinding;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
